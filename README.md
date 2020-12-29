@@ -32,6 +32,7 @@ src\themes\light.js
 const theme = {
     id: 'light',
     primaryColor: '#f8049c',
+    bodyBackgroundColor: 'white',
 };
 ```
 
@@ -41,7 +42,16 @@ src\themes\dark.js
 const theme = {
     id: 'dark',
     primaryColor: 'black',
+    bodyBackgroundColor: 'black',
 };
+```
+
+
+components\common\Header.js
+
+```js
+const Menu = styled.nav`
+  background: ${p => p.theme.bodyBackgroundColor};
 ```
 
 ## Available Scripts
